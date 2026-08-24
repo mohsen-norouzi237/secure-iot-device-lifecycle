@@ -21,7 +21,7 @@
 
 This project implements a slice of the **secure lifecycle of an IoT device**,
 from secure transport and identity all the way to ownership transfer. A
-simulated **ESP32** board (temperature + humidity sensor and a 16×2 I²C LCD)
+simulated **ESP32** board (temperature + humidity sensor and a 16×2 I2C LCD)
 connects to **ThingsBoard** through **MQTT over TLS**, authenticates itself with
 an **X.509 client certificate (mutual TLS)**, registers itself automatically via
 **Auto-Provisioning**, and is finally assigned to an end user through the
@@ -101,7 +101,7 @@ secure-iot-device-lifecycle/
 │       └── libraries.txt            # Wokwi libraries — placeholder included
 │
 └── docs/
-    └── images/                      # screenshots — see docs/images/README.md
+    └── images/                      # screenshots
 ```
 
 
@@ -184,7 +184,7 @@ A `{"response":"SUCCESS"}` reply confirms ownership.
 ## 🧰 Tech Stack
 
 `ESP32` · `Wokwi` · `Arduino / C++` · `MQTT` · `TLS 1.2 / mTLS` · `X.509` ·
-`OpenSSL` · `PKI` · `ThingsBoard` · `Docker` · `Pinggy` · `DHT22` · `I²C LCD`
+`OpenSSL` · `PKI` · `ThingsBoard` · `Docker` · `Pinggy` · `DHT22` · `I2C LCD`
 
 ---
 
