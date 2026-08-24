@@ -180,7 +180,7 @@ curl -s -X POST "http://localhost:8080/api/customer/device/esp32-dht-01/claim" \
 ## 🧰 فناوری‌های استفاده‌شده
 
 فناوری‌ها: `ESP32` · `Wokwi` · `Arduino/C++` · `MQTT` · `TLS 1.2 / mTLS` ·
-`X.509` · `OpenSSL` · `PKI` · `ThingsBoard` · `Docker` · `Pinggy` · `DHT22` · `LCD I²C`
+`X.509` · `OpenSSL` · `PKI` · `ThingsBoard` · `Docker` · `Pinggy` · `DHT22` · `LCD I2C`
 
 ---
 
