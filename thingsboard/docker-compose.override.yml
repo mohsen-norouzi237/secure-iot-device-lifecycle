@@ -1,0 +1,23 @@
+# =====================================================================
+#  ThingsBoard MQTT-over-TLS configuration (KEYSTORE / JKS method)
+#  Place next to your ThingsBoard docker-compose.yml, then run:
+#      docker compose up -d --force-recreate mytb
+#
+#  NOTE: update the host path under `volumes` to match your machine.
+# =====================================================================
+services:
+  mytb:
+    ports:
+      - "8883:8883"
+    volumes:
+      - /home/mohsen/iot-project/certs:/config/certs
+    environment:
+      MQTT_SSL_ENABLED: "true"
+      MQTT_SSL_BIND_PORT: "8883"
+      MQTT_SSL_PROTOCOL: "TLSv1.2"
+      MQTT_SSL_CREDENTIALS_TYPE: "KEYSTORE"
+      MQTT_SSL_KEY_STORE_TYPE: "JKS"
+      MQTT_SSL_KEY_STORE: "/config/certs/mqttserver.jks"
+      MQTT_SSL_KEY_STORE_PASSWORD: "tbserverpass"
+      MQTT_SSL_KEY_PASSWORD: "tbserverpass"
+      MQTT_SSL_SKIP_VALIDITY_CHECK_FOR_CLIENT_CERT: "false"
